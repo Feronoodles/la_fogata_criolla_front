@@ -1,0 +1,32 @@
+*{
+    font-family: 'Gaegu', cursive;
+    color: white;
+    background-color: #B88B5C;
+}
+body {
+    padding: 60px;
+  }
+
+  .lista{
+    display: flex;
+   
+   
+  }
+  .lista li{
+    margin: 0 10px;
+  list-style: none;
+    
+  }
+  .list li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: black;
+  
+     
+  }
+  .list li a:hover{
+    background-color: #111111;
+  
+     
+  }
