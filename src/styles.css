@@ -9,24 +9,36 @@ body {
 
   .lista{
     display: flex;
-   
-   
+    justify-content: end;
+    
+ 
   }
   .lista li{
-    margin: 0 10px;
-  list-style: none;
+    margin: 0 0px;
+    list-style: none;
     
   }
-  .list li a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    background-color: black;
   
-     
+  .cabecera{
+    width: 120px;
+    height: 30px;
+    padding: auto;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    text-align: center;
+
   }
-  .list li a:hover{
-    background-color: #111111;
+  .cabecera a{
+    text-decoration: none;
+    width: 120px;
+    height: 30px;
+    background-color: black;
+   
+  }
+  a:hover{
+    color: orange;
+    
   
      
   }
