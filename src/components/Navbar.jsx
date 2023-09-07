@@ -6,8 +6,8 @@ export const Navbar = () => {
     <div className='logo'>
       <img src={reactLogo} alt="Logo" 
       style={{ position: 'fixed',
-      top: '15px',
-      left:'20px',
+      top: '10px',
+      left:'50px',
      width:'200px'}}  
       />
     </div>
