@@ -36,8 +36,8 @@ body {
   }
 
   .slider{
-    width: 1000px;
-    height: 600px;
+    width: 1200px;
+    height: 650px;
     margin: 0 auto;
     margin-top: 60px;
     
@@ -52,5 +52,32 @@ body {
     border-radius: 20px;
     border: 1px solid #eee;
     overflow: hidden;
+    
   }  
-  
+  .image-slider{
+    display: flex;
+  }
+  .leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 32px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    background-color: transparent;
+  }

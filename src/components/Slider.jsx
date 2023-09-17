@@ -16,22 +16,47 @@ export const Slider = () => {
     if( imgNode )
     {
       imgNode.scrollIntoView({
-        behavior: "smooth"
+        
+        behavior: "smooth",
+        
+        
       });
     }
    
-  }, [currentIndex])
+  }, [currentIndex]);
   
+  const scrollToImage = (direction)=>{
+    
+    if(direction ==='prev')
+    {
+      
+      setCurrentIndex(curr =>{
+        
+        const isFirstSlider = currentIndex===0;
+        return isFirstSlider?0:curr-1;
+      });
+    }else{
+      const isLastSlide = currentIndex === data.length-1;
+      
+      if(!isLastSlide)
+      {
+        
+        setCurrentIndex(curr=> curr+1);
+      }
+    }
+  }
 
   return (
     <div className='slider'>
       <div className='slider-container'>
+        <div className='leftArrow' onClick={()=>scrollToImage('prev')}>&#10092;</div>
+        <div className='rightArrow' onClick={()=>scrollToImage('next')}>&#10093;</div>
         <div className='container-images'> 
-        <ul ref={listRef}>
+        <ul className='image-slider' ref={listRef} >
         {
           data.map((item)=>{
-            return <li key={item.id}>
-              <img src={item.imgUrl} width={1000} height={600} />
+            return <li key={item.id} >
+              <img src={item.imgUrl} width={1200} height={650}  />
             </li>
           })
         }
