@@ -5,10 +5,7 @@ export const Navbar = () => {
     <>
     <div className='logo'>
       <img src={reactLogo} alt="Logo" 
-      style={{ position: 'fixed',
-      top: '10px',
-      left:'50px',
-     width:'200px'}}  
+       
       />
     </div>
     <ul className='lista'>

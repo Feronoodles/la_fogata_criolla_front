@@ -9,17 +9,44 @@ body {
 
   .lista{
     display: flex;
-    justify-content: end;
+    justify-content: right;
+    margin-right: 20px;
     
  
   }
+ 
   .lista li{
     margin: 0 0px;
     list-style: none;
     
   }
   
+  @media(max-width: 1370px){
+    .logo img{
+      position: relative;
+      margin-left: 40%;
+      top: 10px;
+      width: 200px;
+    }
 
+    .lista{
+    position: relative;
+    display: flex;
+    justify-content: initial;
+    margin-top: 200px;
+    margin-left: 100%;
+      
+   
+    }
+}
+  .logo img{
+    position: fixed;
+    left: 50px;
+    top: 10px;
+    
+    
+    width: 200px;
+  }
   .cabecera a{
     text-decoration: none;
     display: inline-block;
@@ -80,4 +107,57 @@ body {
     z-index: 1;
     cursor: pointer;
     background-color: transparent;
+  }
+
+
+  .login_form{
+    position: relative;
+    width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .login_form .items_form{
+    margin-left: 34%;
+   
+  }
+
+  .login_form .items_form label{
+    
+    color: #000;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px;
+    font-size: 20px;
+    
+    
+  }
+  
+  .login_form .items_form input{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #eee;
+    border-color: #000;
+    border-radius: 20px;
+    
+    height: 40px;
+    width: 350px;
+   
+    font-size: 20px;
+    
+    
+  }
+  .login_form .items_form .button_login{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #000;
+    border-color: #000;
+    border-radius: 10px;
+    height: 50px;
+    width: 170px;
+   
+    font-size: 20px;
+  }
+
+  .login_form .items_form .button_login:hover{
+    border-color: #eee;
   }
